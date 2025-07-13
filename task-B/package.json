@@ -1,0 +1,63 @@
+{
+  "name": "@solace/client-sdk",
+  "version": "1.0.0",
+  "description": "Cross-platform client SDK for secure blob encryption and VAD-based audio capture",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build && npm run test"
+  },
+  "keywords": [
+    "solace",
+    "encryption",
+    "vad",
+    "voice-activity-detection",
+    "audio",
+    "crypto",
+    "sdk"
+  ],
+  "author": "Solace Team",
+  "license": "MIT",
+  "dependencies": {
+    "webrtcvad": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "rollup": "^3.25.0",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solace/client-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/solace/client-sdk/issues"
+  },
+  "homepage": "https://github.com/solace/client-sdk#readme"
+} 

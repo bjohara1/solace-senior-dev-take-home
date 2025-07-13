@@ -1,0 +1,15 @@
+{
+  "name": "solace-decrypt-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for enclave-style decryption service",
+  "main": "index.js",
+  "scripts": {
+    "package": "zip -r lambda.zip index.js node_modules/"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1450.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
