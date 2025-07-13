@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Task C: Solace Lite - End-to-End Voice Companion
 
 A complete voice-to-voice AI companion prototype with speech recognition, natural language processing, and text-to-speech capabilities. The system is designed with psychiatric knowledge to provide supportive, empathetic responses.
@@ -199,129 +197,71 @@ npm start          # Start React development server
 npm run server     # Start Express API server
 npm run dev        # Start both frontend and backend
 npm run build      # Build for production
-npm test           # Run tests
 ```
 
-### Development Mode
+### Development Workflow
 
-The app runs in demo mode by default with:
-- Mock ASR responses
-- Pre-defined empathetic chatbot responses
-- Browser-based TTS synthesis
-
-### Production Setup
-
-For production deployment:
-
-1. **Set up real API keys** in environment variables
-2. **Configure OpenAI Whisper** for ASR
-3. **Set up OpenAI GPT** for chatbot
-4. **Configure AWS Polly** or Azure Speech for TTS
-5. **Build the application**:
+1. **Start development servers**:
    ```bash
-   npm run build
-   npm run server
+   npm run dev
    ```
 
-## 🔒 Security Considerations
+2. **Make changes** to React components or server code
 
-### Data Protection
-- **Encrypted storage**: Transcripts encrypted before localStorage
-- **Secure API calls**: HTTPS-only communication
-- **No data persistence**: Transcripts cleared on page refresh
-- **Privacy-first**: No personal data collection
+3. **Test functionality** in the browser
 
-### API Security
-- **Rate limiting**: Implemented on server endpoints
-- **Input validation**: All inputs sanitized
-- **Error handling**: No sensitive data in error messages
-- **CORS configuration**: Proper cross-origin settings
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
 ## 🧪 Testing
 
 ### Manual Testing
-1. **Microphone access**: Test recording functionality
-2. **Voice settings**: Verify voice customization
-3. **Conversation flow**: Test end-to-end interaction
-4. **Error scenarios**: Test network failures, API errors
+- Test voice recording and transcription
+- Verify chatbot responses
+- Check TTS functionality
+- Test error handling
 
 ### Automated Testing
 ```bash
-npm test              # Run all tests
-npm test -- --watch   # Run tests in watch mode
+npm test
 ```
+
+## 📦 Deployment
+
+### Production Build
+1. **Build the application**:
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy to your preferred hosting service**:
+   - Vercel, Netlify, or similar for frontend
+   - Heroku, AWS, or similar for backend
+
+3. **Set environment variables** on your hosting platform
+
+## 🔒 Security Considerations
+
+- **API Keys**: Never commit API keys to version control
+- **HTTPS**: Use HTTPS in production
+- **CORS**: Configure CORS properly for your domain
+- **Rate Limiting**: Implement rate limiting for API endpoints
+- **Input Validation**: Validate all user inputs
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
-
-**Microphone not working**:
-- Check browser permissions
-- Ensure HTTPS in production
-- Try refreshing the page
-
-**API errors**:
-- Verify environment variables
-- Check API key validity
-- Review server logs
-
-**Audio playback issues**:
-- Check browser audio settings
-- Ensure no other apps using audio
-- Try different voice settings
+- **Microphone permissions**: Ensure browser has microphone access
+- **API errors**: Check environment variables and API keys
+- **Build errors**: Clear node_modules and reinstall dependencies
 
 ### Debug Mode
+Set `LOG_LEVEL=debug` in your environment variables for detailed logging.
 
-Enable debug logging:
-```bash
-LOG_LEVEL=debug npm run dev
-```
+## 📝 License
 
-## 📚 Dependencies
+This project is licensed under the MIT License.
 
-### Frontend
-- React 18.2.0
-- TypeScript 4.9.0
-- Web Audio API
-- WebRTC VAD
-
-### Backend
-- Express.js 4.18.2
-- Multer (file uploads)
-- CORS (cross-origin)
-- dotenv (environment)
-
-### APIs
-- OpenAI Whisper (ASR)
-- OpenAI GPT (Chatbot)
-- AWS Polly/Azure Speech (TTS)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is part of the Solace Senior Developer Take-Home assignment.
-
-## 🆘 Support
-
-For issues or questions:
-1. Check the troubleshooting section
-2. Review the API documentation
-3. Check browser console for errors
-4. Verify environment configuration
-
----
-
-**Note**: This is a prototype/demo application. For production use, implement proper security measures, error handling, and API integrations. 
-=======
-# solace-senior-dev-take-home
->>>>>>> bda395ea4ece223dcd90980531c7d85dc58ce54b
-=======
-
->>>>>>> f4b422dd583c9f298fd9020fce77d0c6fddf5b28
+**Note**: This is a prototype/demo application. For production use, implement proper security measures, error handling, and API integrations.
