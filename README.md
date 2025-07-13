@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Task C: Solace Lite - End-to-End Voice Companion
 
 A complete voice-to-voice AI companion prototype with speech recognition, natural language processing, and text-to-speech capabilities. The system is designed with psychiatric knowledge to provide supportive, empathetic responses.
@@ -321,3 +322,6 @@ For issues or questions:
 =======
 # solace-senior-dev-take-home
 >>>>>>> bda395ea4ece223dcd90980531c7d85dc58ce54b
+=======
+
+>>>>>>> f4b422dd583c9f298fd9020fce77d0c6fddf5b28
